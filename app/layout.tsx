@@ -4,7 +4,7 @@ import { ClerkProvider } from '@clerk/nextjs'
 
 import './globals.css'
 
-const poppins =Poppins({ 
+const poppins = Poppins({
   subsets: ['latin'],
   weight: ['400', '500', '600', '700'],
   variable: '--font-poppins',
@@ -12,9 +12,9 @@ const poppins =Poppins({
 
 export const metadata: Metadata = {
   title: 'Evently',
-  description: 'Evently is a platform for event management',
+  description: 'Evently is a platform for event management.',
   icons: {
-    icon: '/assets/icons/logo.svg'
+    icon: '/assets/images/logo.svg'
   }
 }
 
@@ -25,9 +25,10 @@ export default function RootLayout({
 }) {
   return (
     <ClerkProvider>
-    <html lang="en">
-      <body className={poppins.variable}>{children}</body>
-    </html>
+      <html lang="en">
+      <link rel="icon" href="/assets/icons/logo-grey.svg" />
+        <body className={poppins.variable}>{children}</body>
+      </html>
     </ClerkProvider>
   )
 }
