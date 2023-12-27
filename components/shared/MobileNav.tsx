@@ -28,7 +28,8 @@ const MobileNav = () => {
           <Image src="assets/images/logo.svg"
            width={128}
           height={38}
-          alt="Evently Logo" />
+          alt="Evently Logo" 
+          />
           <Separator className="border border-gray-50"/>
           <NavItems />
         </SheetContent>
