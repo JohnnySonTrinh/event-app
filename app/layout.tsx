@@ -26,7 +26,6 @@ export default function RootLayout({
   return (
     <ClerkProvider>
       <html lang="en">
-      <link rel="icon" href="/assets/icons/logo-grey.svg" />
         <body className={poppins.variable}>{children}</body>
       </html>
     </ClerkProvider>
